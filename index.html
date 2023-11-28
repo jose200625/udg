@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js" async></script>
+    <title>Component Store | </title>
+</head>
+<body>
+
+        <center><h1 class="ti">Component Store</h1></center>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Monitor Gamer 55</span>
+                <img src="img/monitor.jpeg" alt="" class="img-item">
+                <span class="precio-item">$59,324.62</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Intel Procesador Core i9</span>
+                <img src="img/i9.jpeg" alt="" class="img-item">
+                
+                <span class="precio-item">$6,100.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">GeForce RTX 40 Series</span>
+                <img src="img/rtx.png" alt="" class="img-item">
+                <span class="precio-item">$6,498.50</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">ASUS tarjeta
+                    madre serie Z790</span>
+                <img src="img/asus.jpg" alt="" class="img-item">
+                <span class="precio-item">$11,959.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">SAMSUNG 990 Pro</span>
+                <img src="img/990 pro.webp" alt="" class="img-item">
+                <span class="precio-item">$2,646.42</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Kingston Fury Renegade RGB</span>
+                <img src="img/ram.png" alt="" class="img-item">
+                <span class="precio-item">$2,207.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cooler Master
+                    MasterAir MA620M
+                    ARGB</span>
+                <img src="img/coooler.png" alt="" class="img-item">
+                <span class="precio-item">$2,037.75</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Asus Gabinete</span>
+                <img src="img/gabinete.jpg" alt="" class="img-item">
+                <span class="precio-item">$6,199.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">CPU 7.O</span>
+                <img src="img/mcpu.png" alt="" class="img-item">
+                <span class="precio-item">$19,374.62</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Memoria RAM Quantum-7.0</span>
+                <img src="img/ram7.0.png" alt="" class="img-item">
+                <span class="precio-item">$5,678.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Procesador 5.1</span>
+                <img src="img/bcpu.png" alt="" class="img-item">
+                <span class="precio-item">$4,789.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Chipset 5.1</span>
+                <img src="img/intel.png" alt="" class="img-item">
+                <span class="precio-item">$2,459.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">BIOS 5.1</span>
+                <img src="img/bios.png" alt="" class="img-item">
+                <span class="precio-item">$1,120.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Targeta Madre 5.1</span>
+                <img src="img/targeta.png" alt="" class="img-item">
+                <span class="precio-item">$7,650.00</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Carrito</h2>
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Total</strong>
+                    <span class="carrito-precio-total">
+                       
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="texto-footer">Cabrera Balderas Jose Nery 5.B T/M BTDS</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/f259c279ef.js" crossorigin="anonymous"></script>
+</body>
+</html>
